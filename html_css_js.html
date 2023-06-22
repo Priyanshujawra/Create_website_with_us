@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+  <title>header of web</title>
+  <link rel="stylesheet" href="header.css" />
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@500&family=Pacifico&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300&family=Oswald:wght@500&family=Pacifico&display=swap"
+    rel="stylesheet" />
+</head>
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
+
+<body>
+  <header>
+    <nav>
+      <div class="home">
+        <div class="logo">
+          <span class="hamburgur_box">
+            <div class="cont_of_bar" onclick="onclickmenu()">
+              <span id="hamburger_row"> </span>
+              <span id="hamburger_row_1"> </span>
+              <span id="hamburger_row_2"> </span>
+            </div>
+            <span id="svg_content">
+              <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                role="presentation">
+                <path
+                  d="M35.4841 23.5027C36.8736 23.5027 38 22.3744 38 20.9825C38 19.5905 36.8736 18.4622 35.4841 18.4622C34.0946 18.4622 32.9681 19.5905 32.9681 20.9825C32.9681 22.3744 34.0946 23.5027 35.4841 23.5027Z"
+                  fill="black"></path>
+                <path
+                  d="M7.13975 21.8653L0.203993 2.58841C0.135995 2.31595 0 1.97537 0 1.63479C0 0.817393 0.679976 0 1.69994 0C2.58391 0 3.12789 0.544928 3.39988 1.43044L9.17968 18.5276L14.9595 1.36232C15.2315 0.544929 15.7754 0 16.6594 0H16.8634C17.8154 0 18.3594 0.544929 18.6313 1.36232L24.2751 18.5276L30.1229 1.29421C30.3269 0.613044 30.8029 0 31.7549 0C32.7068 0 33.4548 0.749277 33.4548 1.56667C33.4548 1.90725 33.3188 2.24783 33.2508 2.52029L26.2471 21.8653C25.9071 22.887 25.1591 23.4319 24.4111 23.4319H24.2751C23.3912 23.4319 22.7112 22.887 22.4392 21.8653L16.7274 5.24494L11.0156 21.8653C10.6756 22.887 10.0636 23.4319 9.17968 23.4319H9.11168C8.22771 23.4319 7.47974 22.887 7.13975 21.8653Z"
+                  fill="black"></path>
+              </svg></span>
+          </span>
+          <div class="emb">
+            <script>
+              // let ham = document.getElementsByClassName("cont_of_bar");
+              let ham = document.getElementById("hamburger_row");
+              let ham_1 = document.getElementById("hamburger_row_1");
+              let ham_2 = document.getElementById("hamburger_row_2");
+              var single = document.getElementsByClassName("drop_down_menu");
+              function onclickmenu() {
+                ham.classList.toggle("modify_row_of_ham");
+                ham_1.classList.toggle("modify_row_of_ham_1");
+                ham_2.classList.toggle("modify_row_of_ham_2");
+                single[0].classList.toggle("drop_down_menu_show");
+                // single[0].classList.remove("drop_down_menu");
+              }
+            </script>
+            <style></style>
+          </div>
+
+          <img
+            src="https://www.web.com/content/experience-fragments/webdotcom/site-header/master/_jcr_content/root/header/logo.coreimg.svg/1605898468526.svg"
+            alt="" />
+          <!-- <img src="https://i.pinimg.com/736x/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg" alt=""> -->
+        </div>
+        <div class="button">
+          <ul>
+            <li><label id="hide">blog</label></li>
+            <li>
+              <i class="fa-solid fa-user"></i><label id="hide">help center</label>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i><label id="hide">contect us</label>
+            </li>
+            <li>
+              <i class="fa-solid fa-cart-shopping"></i><label id="hide">cart</label>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-user" style="color: #7774da !important"></i><label id="hide">log in</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="drop_down_menu" id="senndy">
+        <div class="nav_drop" onclick="show_down_menu_1()">
+          <div class="box_hover">
+            <div id="anc" href="">
+              <label>Websites</label><i id="rotate" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <span class="drop_box" id="map_drop_box">
+              <ul>
+                <li><a href=""> Overview</a></li>
+                <li><a href=""> DIY Builder</a></li>
+                <li><a href="">Online Store</a></li>
+                <li id="for_underline">
+                  <a href="">Scheduling</a><label id="label">NEW</label>
+                </li>
+                <h5>Web Design Services</h5>
+                <li>
+                  <a href="">QuickStart</a> <label id="label">NEW</label>
+                </li>
+                <li><a href="">Designed by an Expert</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <div class="nav_drop" onclick="show_down_menu_2()">
+          <div class="box_hover">
+            <div id="anc" href="">
+              <label>Marketing</label>
+              <i id="rotate" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <span class="drop_box" id="map_drop_box">
+              <ul>
+                <li><a href=""> Overview</a></li>
+                <li><a href=""> SEO Tool</a></li>
+                <li><a href="">Business Listings</a></li>
+                <h5>Marketing Services</h5>
+                <li><a href="">SEO Services</a></li>
+                <li><a href="">PPC Services</a></li>
+                <li><a href="">Directory Services</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <div class="nav_drop" onclick="show_down_menu_3()">
+          <div class="box_hover">
+            <div id="anc" href="">
+              <label>Domains</label>
+              <i id="rotate" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <span class="drop_box" id="map_drop_box">
+              <ul>
+                <span class="input_feild">
+                  <input type="text" id="input_text_area" placeholder="Find Your Domain" />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <li style="margin-top: 1rem">
+                  <a href=""> Domain Name Search</a>
+                </li>
+                <li><a href=""> AI Domain Generator </a></li>
+                <li><a href=""></a> Domain Expiration Protection</li>
+                <li><a href=""> Domain Privacy</a></li>
+                <li><a href="">Premium DNS</a></li>
+                <li><a href="">Domain Transfer</a></li>
+                <li><a href="">WHOIS Lookup</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <div class="nav_drop" onclick="show_down_menu_4()">
+          <div class="box_hover">
+            <div id="anc" href="">
+              <label>Hosting</label>
+              <i id="rotate" class="fa-solid fa-angle-down"></i>
+            </div>
+            <span class="drop_box" id="map_drop_box">
+              <ul>
+                <li><a href=""> Overview</a></li>
+                <li><a href=""> Web Hosting </a></li>
+                <li><a href="">WordPress Hosting</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <div class="nav_drop" onclick="show_down_menu_5()">
+          <div class="box_hover">
+            <div id="anc" href="">
+              <label>Security</label>
+              <i id="rotate" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <span class="drop_box" id="map_drop_box">
+              <ul>
+                <li><a href=""> Overview</a></li>
+                <li><a href=""> SSL Certificates</a></li>
+                <li><a href="">Website Security</a></li>
+                <li><a href="">Website Backup</a></li>
+                <li><a href="">Cyber Security</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <div class="nav_drop" onclick="show_down_menu_6()">
+          <div class="box_hover">
+            <div id="anc" href="">
+              <label> Email Us</label><i id="rotate" class="fa-solid fa-angle-down"></i>
+            </div>
+            <span class="drop_box" id="map_drop_box">
+              <ul>
+                <li><a href=""> Overview</a></li>
+                <li><a href="">Business Email </a></li>
+                <li><a href="">Google Workspace</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+        <div class="nav_drop">
+          <div class="box_hover">
+            <a id="anc" href="">Expert Services</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="search_input_area">
+      <div class="store_input_content">
+        <input type="text" placeholder="Discover Your Domain" />
+      </div>
+      <div class="but">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <button>Search</button>
+      </div>
+    </div>
+    <div class="emb">
+      <script>
+        let drop = document.querySelectorAll("#map_drop_box");
+        let move = document.querySelectorAll("#rotate");
+
+        function show_down_menu_1() {
+          if (drop[0].className === "drop_box") {
+            drop[0].className += " responsive";
+          } else {
+            drop[0].className = "drop_box";
+          }
+          move[0].className.toggle("rotate_deg");
+        }
+        function show_down_menu_2() {
+          if (drop[1].className === "drop_box") {
+            drop[1].className += " responsive";
+          } else {
+            drop[1].className = "drop_box";
+          }
+          move[1].className.toggle("rotate_deg");
+        }
+        function show_down_menu_3() {
+          if (drop[2].className === "drop_box") {
+            drop[2].className += " responsive";
+          } else {
+            drop[2].className = "drop_box";
+          }
+          move[2].className.toggle("rotate_deg");
+        }
+        function show_down_menu_4() {
+          if (drop[3].className === "drop_box") {
+            drop[3].className += " responsive";
+          } else {
+            drop[3].className = "drop_box";
+          }
+          move[3].className.toggle("rotate_deg");
+        }
+        function show_down_menu_5() {
+          if (drop[4].className === "drop_box") {
+            drop[4].className += " responsive";
+          } else {
+            drop[4].className = "drop_box";
+          }
+          move[4].className.toggle("rotate_deg");
+        }
+        function show_down_menu_6() {
+          if (drop[5].className === "drop_box") {
+            drop[5].className += " responsive";
+          } else {
+            drop[5].className = "drop_box";
+          }
+          move[5].className.toggle("rotate_deg");
+        }
+      </script>
+      <style></style>
+    </div>
+  </header>
+
+  <section>
+    <div class="landing_page">
+      <div class="landing_page_content">
+        <div class="content_first">
+          <h2>INTRODUCING QUICKSTART</h2>
+        </div>
+        <div class="content_second">
+          <h1>
+            <label style="background: yellow; border-radius: 50px; color: black">$199</label>
+            web design special
+          </h1>
+        </div>
+        <div class="content_third">
+          <h1>
+            Let us design and build you the perfect website tailored to your
+            unique goals.
+          </h1>
+        </div>
+        <span class="span_margin">
+          <button id="save_button"><a href=""> save</a></button>
+        </span>
+      </div>
+      <div class="image_setup">
+        <img src="naked-laptop.avif" alt="" id="set_wt" />
+      </div>
+      <style>
+        .image_setup img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <div class="svg_half_circle">
+        <svg width="1845" height="1086" viewBox="0 0 645 386" fill="none" style="transform: translate(-8%, 0%)"
+          xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_59_332" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="645"
+            height="386">
+            <rect width="1045" height="386" fill="#D9D9D9" />
+          </mask>
+          <g mask="url(#mask0_59_332)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M-1.95312 389H645.275C576.504 283.06 457.253 213 321.661 213C186.069 213 66.8188 283.06 -1.95312 389Z"
+              fill="#FFF9E5" />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="build_web">
+      <div class="build_web_2">
+        <div class="build_web_content">
+          <h2><b> WEBSITE BUILDER</b></h2>
+
+          <h1>Or build your own website</h1>
+          <p>
+            Feeling creative? Save up to 60% on our website building tools!
+          </p>
+        </div>
+        <div class="btn_for_start_Building">
+          <a href=""><button id="start_learning">Start building</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article>
+    <div class="grid_layout">
+      <div class="all_grid_box">
+        <div class="grid-container">
+          <div id="box" class="item1">
+            <h1>One stop. All done.</h1>
+          </div>
+          <div id="box" id="box_1" class="item2">
+            <h2>Expert services</h2>
+            <p>Let us do it for you</p>
+          </div>
+          <div id="box" id="box_1" class="item3">
+            <h2>AI Domain Generator</h2>
+            <p>Find the perfect domain name</p>
+          </div>
+          <div id="box" id="box_1" class="item4">
+            <h2>Website Builder</h2>
+            <p>Build a website for your business</p>
+          </div>
+          <div id="box" id="box_1" class="item5">
+            <h2>Email</h2>
+            <p>Build trust with a business email</p>
+          </div>
+          <div id="box" class="item6">
+            <h2>Online Store</h2>
+            <p>Start selling online with eCommerce</p>
+          </div>
+          <div id="box" id="box_1" class="item7">
+            <h2>SSL</h2>
+            <p>Keep your website safe & secure</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="diy_system_1">
+    <div class="discription_diy">
+      <div class="heading_of_content">
+        <h1>DIY website builder</h1>
+      </div>
+      <div class="quality-of-web-bulid-ex">
+        <ul>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>Drag-and-drop builder</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+
+            <p>Free domain name</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>Optimized for mobile</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>AI Writer tool for website copy</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="creator_image">
+      <img src="diy-website-builder-5.avif" alt="" />
+    </div>
+  </div>
+  <div class="diy_system_1">
+    <div class="creator_image">
+      <img src="design-expert.jpeg" alt="" />
+    </div>
+    <div class="discription_diy">
+      <div class="heading_of_content">
+        <h1>Expert design services</h1>
+      </div>
+      <div class="quality-of-web-bulid-ex">
+        <ul>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>In-house professionals</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+
+            <p>Engaging design & copy</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>Online store assistance</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>SEO optimized</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <p>Tailored to your unique goals</p>
+          </li>
+        </ul>
+      </div>
+      <div class="contect_button_set">
+        <button><a href="">CONTECT US</a></button>
+      </div>
+    </div>
+  </div>
+  <div class="slide_system">
+    <div class="slide_content">
+      <h1>Our custom designs</h1>
+      <p>We build websites to meet your business goals</p>
+    </div>
+    <div class="slide_image_view">
+      <div class="all_system">
+        <div class="slide_image_rap">
+          <img src="custom_image_slider/custom gallery image one.webp" alt="" />
+          <img src="custom_image_slider/custom gallery image two.webp" alt="" />
+          <img src="custom_image_slider/custom gallery image three.webp" alt="" />
+          <img src="custom_image_slider/custom gallery image four.webp" alt="" />
+          <img src="custom_image_slider/custom gallery image five.webp" alt="" />
+          <img src="custom_image_slider/custom gallery image six.webp" alt="" />
+          <img src="custom_image_slider/custom gallery image seven.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="slide_system_button">
+      <i id="left" class="fa-solid fa-arrow-left"></i>
+      <i id="right" class="fa-solid fa-arrow-right"></i>
+    </div>
+  </div>
+  <script>
+    let met_step = document.querySelector(".slide_image_rap"),
+      firstimg = met_step.querySelectorAll("img")[0];
+    arrowicon = document.querySelectorAll(".slide_system_button i");
+    let firstim = met_step.querySelectorAll("img");
+    let isdradstart = false,
+      prevpageX,
+      prevscrollleft;
+    const dragstart = (e) => {
+      isdradstart = true;
+      prevpageX = e.pageX || e.touches[0].pageX;
+      prevscrollleft = met_step.scrollLeft;
+    };
+
+    const dragging = (e) => {
+      if (!isdradstart) return;
+      e.preventDefault();
+      met_step.classList.add("dragging");
+      let positionoff = (e.pageX || e.touches[0].pageX) - prevpageX;
+      met_step.scrollLeft = prevscrollleft - positionoff;
+    };
+    const dragstop = () => {
+      isdradstart = false;
+      met_step.classList.remove("dragging");
+    };
+    met_step.addEventListener("mousedown", dragstart);
+    met_step.addEventListener("touchstart", dragstart);
+    met_step.addEventListener("mousemove", dragging);
+    met_step.addEventListener("touchmove", dragging);
+    met_step.addEventListener("mouseup", dragstop);
+    met_step.addEventListener("touch", dragstop);
+    let select_left = document.getElementById("left");
+    let firstimgtag = (firstimg.clientWidth = 437);
+    arrowicon.forEach((icons) => {
+      icons.addEventListener("click", () => {
+        met_step.scrollLeft +=
+          icons.id == "left" ? -firstimgtag : firstimgtag;
+        // met_step.scrollLeft+= icons.id=="left" ?  firstimg[0].classList.remove("trans"): firstim[0].classList.add("trans");
+      });
+    });
+  </script>
+
+  <div class="contect_information_feild">
+    <div class="contect_information_feild-content">
+      <h1>Need help creating your website?</h1>
+      <p>
+        Get professional services & support from our team of website &
+        marketing experts.
+      </p>
+      <p>Fill out our contact form, and we’ll give you a call.</p>
+    </div>
+    <div class="collect_information">
+      <form action="">
+        <input placeholder="Firstname" type="text" class="input_field" />
+        <input placeholder="Lastname" type="text" class="input_field" />
+        <input placeholder="phone No." type="phone no" class="input_field" />
+        <input placeholder="Email Address" type="email" class="input_field" />
+        <div class="button_system_to_talk">
+          <button>LET'S TALK</button>
+          <a href="">or schedule a call</a>
+        </div>
+      </form>
+    </div>
+    <div class="full_detail">
+      <p>
+        *By submitting your information you provide written consent to Web.com
+        and its affiliates contacting you. See <a href=""> full details.</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="create_web_and_with_our_expert">
+    <div class="create_web_and_with_our_expert_content">
+      <div class="seperate_content">
+        <h1>Your one-stop-shop for easy & affordable website building</h1>
+      </div>
+      <div class="seperate_content_btn">
+        <button>
+          <a href="">START CREATING</a>
+        </button>
+        <button id="hire_ex">
+          <a href="">HIRE AN EXPERT</a>
+        </button>
+      </div>
+    </div>
+    <div class="cart_web_de_image">
+      <img src="curve2.avif" alt="" />
+    </div>
+  </div>
+
+  <div class="achivement_certificate">
+    <div class="achivement_certificate_content">
+      <h1>Trusted by over 3 million users worldwide</h1>
+    </div>
+    <!-- achievement  -->
+    <div class="achievment_image">
+      <div class="image_box_certificate">
+        <img src="certificate_image/ABA23_Bronze_Winner.avif" alt="" />
+      </div>
+      <div class="image_box_certificate">
+        <img src="certificate_image/2021_Google_award-1.avif" alt="" />
+      </div>
+      <div class="image_box_certificate">
+        <img src="certificate_image/2022_martech_award-1.avif" alt="" />
+      </div>
+      <div class="image_box_certificate">
+        <img src="certificate_image/2023 BIG Innovation Award Badge_Edited2 1(1).avif" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="customer_review">
+    <div class="customer_review_content">
+      <h1>What our customers are saying</h1>
+    </div>
+    <!-- achievement  -->
+    <div class="discription_about_customer">
+      <div class="review_text">
+        <div class="svg_tag_set"><i class="fa-solid fa-quote-left"></i></div>
+        <div class="text_cell_set">
+          <p>
+            Web.com makes advertising and SEO much easier. They relieve me of
+            having to worry about online marketing and I know they are
+            displaying pertinent ads at pertinent times. Web.com is easily
+            accessible and they are available to help you."
+          </p>
+        </div>
+        <div class="customer_name_reivew">
+          <h2>Bryan Caddell P.C.</h2>
+          <p>Caddell Family Law</p>
+        </div>
+      </div>
+      <div class="review_text">
+        <div class="svg_tag_set"><i class="fa-solid fa-quote-left"></i></div>
+        <div class="text_cell_set">
+          <p>
+            I receive an abundance of new clients daily; every time I ask
+            clients how they find me they say I come up first on google and I
+            know this is because of the SEO work done by Web.com. They do the
+            work, and I can focus on my business.”
+          </p>
+        </div>
+
+        <div class="customer_name_reivew">
+          <h2>Amanda Thompson</h2>
+          <p>The Mane Tamer Hair Spa</p>
+        </div>
+      </div>
+      <div class="review_text">
+        <div class="svg_tag_set"><i class="fa-solid fa-quote-left"></i></div>
+        <div class="text_cell_set">
+          <p>
+            We really appreciate the quality and the service Web.com has
+            provided. They are always helpful and supportive and have been
+            outstanding in terms of service and reliability.”
+          </p>
+        </div>
+        <div class="customer_name_reivew">
+          <h2>Carmella Wehrle</h2>
+          <p>Notary In Your Neighborhood</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="answer_of_the_question">
+    <div class="answer_of_the_question_content_1">
+      <h3>SUPPORT</h3>
+      <h1>Frequently asked questions</h1>
+      <p>Get the answers you need right away.</p>
+    </div>
+    <div class="answer_of_the_question_content_2">
+      <!-- accordion start here-->
+      <div class="question_1">
+        <h1 id="question_2">
+          <i id="rotate_deg" class="fa-solid fa-angle-down"></i> Why should
+          you work with Web.com?
+        </h1>
+        <div class="qestion_answer">
+          <p>
+            Web.com is a leading web technology company and one of the
+            nation’s largest providers of website builder and online marketing
+            services. Since 1999, we’ve served more than 3 million customers
+            around the world, and we manage over 9 million domain names. We
+            offer a variety of comprehensive solutions with all the tools
+            small businesses need to succeed online, and all our services are
+            backed by an award-winning customer support team.
+          </p>
+        </div>
+      </div>
+      <div class="question_1">
+        <!-- onclick="show_hiding_content_1()" -->
+        <h1 id="question_2">
+          <i id="rotate_deg" class="fa-solid fa-angle-down"></i>Why do I need
+          a website for my business?
+        </h1>
+        <div class="qestion_answer">
+          <p>
+            A website helps you promote your business online and establish
+            credibility with your customers. For customers to find you online,
+            it’s important to have a professional website that offers helpful,
+            relevant content and provides a good experience for users.
+          </p>
+        </div>
+      </div>
+      <div class="question_1">
+        <!-- onclick="show_hiding_content_2()" -->
+        <h1 id="question_2">
+          <i id="rotate_deg" class="fa-solid fa-angle-down"></i>Should I use a
+          website builder or hire a website designer?
+        </h1>
+        <div class="qestion_answer">
+          <p>
+            We offer both options. If you need a website quickly, then we have
+            an easy-to-use website builder with over a hundred templates to
+            choose from. Once you find a template you love, you can customize
+            it to fit your needs and get online fast. If you’re short on time,
+            then let our experts design a custom website that checks all the
+            boxes. You’ll get a professional design with fresh content written
+            for your customers and search engines in mind.
+          </p>
+        </div>
+      </div>
+      <div class="question_1">
+        <!-- onclick="show_hiding_content_3()" -->
+        <h1 id="question_2">
+          <i id="rotate_deg" class="fa-solid fa-angle-down"></i>What is a
+          domain name and why do I need one?
+        </h1>
+        <div class="qestion_answer">
+          <p>
+            A domain name is the URL of your website. Think of it as the
+            address for your customers to find your website online. A branded,
+            keyword-rich domain name is a great way to give your business a
+            more professional presence online, build credibility, increase
+            brand awareness and improve your search engine rankings.
+          </p>
+        </div>
+      </div>
+      <div class="question_1">
+        <!-- onclick="show_hiding_content_4()" -->
+        <h1 id="question_2">
+          <i id="rotate_deg" class="fa-solid fa-angle-down"></i>Why do
+          businesses use Web.com for their digital marketing?
+        </h1>
+        <div class="qestion_answer">
+          <p>
+            We provide a full range of online marketing services for every
+            type and size of business and budget, with campaigns designed for
+            both local and global markets. Our Pay-Per-Click (PPC) agents are
+            specially trained to assist you with Google advertising, a service
+            which allows you to choose specific keywords and appear in ads at
+            the top of search pages. We also offer search engine optimization
+            (SEO) services to determine the right keywords and content
+            strategy for raising your search ranking. If you’d like to connect
+            with more people on social media, we’ll help you grow your
+            audience in the places your customers spend time online.
+          </p>
+        </div>
+      </div>
+      <div class="question_1">
+        <!-- onclick="show_hiding_content_5()" -->
+        <h1 id="question_2">
+          <i id="rotate_deg" class="fa-solid fa-angle-down"></i>How can I keep
+          my website secure online?
+        </h1>
+        <div class="qestion_answer">
+          <p>
+            You can keep your website secure and your customers’ information
+            safe with an SSL certificate. An SSL certificate will validate
+            your identity online and encrypt private information, such as
+            payment and customer account information. A secure website will
+            gain your customers’ trust and improve your search engine
+            performance
+          </p>
+        </div>
+      </div>
+      <div class="question_1">
+        <!-- onclick="show_hiding_content_6()" -->
+        <h1 id="question_2">
+          <i id="rotate_deg" class="fa-solid fa-angle-down"></i>How does
+          Web.com help small businesses?
+        </h1>
+        <div class="qestion_answer">
+          <p>
+            With more than two decades in business, we put our experience to
+            work for you. Our customer service experts provide unlimited
+            support when you need it, and we offer a wide range of resources
+            to help you succeed online. When you’re ready to create a
+            professional website, we’ll match you with a website builder coach
+            who makes it easier to get your site up and running. If you ever
+            have any questions or need assistance along the way, we’ll be here
+            to help every step of the way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- footer section start --->
+  <footer>
+    <div class="webcam_footer">
+      <div class="cantainer_box_foot">
+        <div class="get_perfect_domain">
+          <div class="get_perfect_domain_content">
+            <h1>Get started with the perfect domain.</h1>
+          </div>
+          <div class="input_feild_search_domain">
+            <input type="text" placeholder="Find your perfect Domain" />
+            <button><a href="">search</a></button>
+          </div>
+        </div>
+        <div class="Our_fecility_and_resource">
+          <div class="the_Products_part">
+            <div class="heading_of_facility">
+              <h1>Products</h1>
+            </div>
+            <div class="name_of_resource">
+              <ul>
+                <li>DIY Website Builder</li>
+                <li>WordPress Website</li>
+                <li>Domains</li>
+                <li>Domain Transfer</li>
+                <li>Hosting</li>
+                <li>SSL Certificates</li>
+                <li>Website Security</li>
+                <li>Website Backup</li>
+                <li>Cyber Security Solution</li>
+                <li>Business Email</li>
+                <li>Google Workspace</li>
+              </ul>
+            </div>
+          </div>
+          <div class="the_ExpertServices_part">
+            <div class="heading_of_facility">
+              <h1>Expert Services</h1>
+            </div>
+            <div class="name_of_resource">
+              <ul>
+                <li>Custom Website Design</li>
+                <li>eCommerce Website Design</li>
+                <li>WordPress Website Design</li>
+                <li>Search Engine Optimization</li>
+                <li>Local SEO Services</li>
+                <li>Pay-Per-Click Advertising</li>
+              </ul>
+            </div>
+          </div>
+          <div class="the_Support_part">
+            <div class="heading_of_facility">
+              <h1>Support</h1>
+            </div>
+            <div class="name_of_resource">
+              <ul>
+                <li>Help Center</li>
+                <li>Report Abuse</li>
+                <li>Report Ethical Hacking</li>
+              </ul>
+            </div>
+          </div>
+          <div class="the_resources_part">
+            <div class="heading_of_facility">
+              <h1>Resources</h1>
+            </div>
+            <div class="name_of_resource">
+              <ul>
+                <li>Web.com Blog</li>
+                <li>WHOIS Search</li>
+                <li>Business Name Generator</li>
+                <li>Site Map</li>
+                <li>Case Studies</li>
+              </ul>
+            </div>
+          </div>
+          <div class="the_About_Web_com_part">
+            <div class="heading_of_facility">
+              <h1>About Web.com</h1>
+            </div>
+            <div class="name_of_resource">
+              <ul>
+                <li>About Us</li>
+                <li>Reviews</li>
+                <li>Careers</li>
+                <li>Partnerships</li>
+                <li>Affiliate Program</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contect_us_on_social_platphorm">
+          <div class="Connectwithus">
+            <h1>Connect with us</h1>
+          </div>
+          <div class="socail_image">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="terms_and_policy">
+            <svg width="115" height="21" viewBox="0 0 115 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.33884 19.4671L0.123967 7.77288C0.0826446 7.6076 0 7.40098 0 7.19437C0 6.6985 0.413223 6.20264 1.03306 6.20264C1.57025 6.20264 1.90083 6.53322 2.06612 7.07041L5.57851 17.4423L9.09091 7.02908C9.2562 6.53322 9.58678 6.20264 10.124 6.20264H10.2479C10.8264 6.20264 11.157 6.53322 11.3223 7.02908L14.7521 17.4423L18.3058 6.98776C18.4298 6.57454 18.719 6.20264 19.2975 6.20264C19.876 6.20264 20.3306 6.65718 20.3306 7.15305C20.3306 7.35966 20.2479 7.56627 20.2066 7.73156L15.9504 19.4671C15.7438 20.0869 15.2893 20.4175 14.8347 20.4175H14.7521C14.2149 20.4175 13.8017 20.0869 13.6364 19.4671L10.1653 9.38446L6.69421 19.4671C6.4876 20.0869 6.1157 20.4175 5.57851 20.4175H5.53719C5 20.4175 4.54545 20.0869 4.33884 19.4671Z"
+                fill="white"></path>
+              <path
+                d="M28.595 20.5001C24.7934 20.5001 21.6942 17.5662 21.6942 13.31V13.2687C21.6942 9.26043 24.5041 6.07861 28.3471 6.07861C32.438 6.07861 34.7934 9.42572 34.7934 13.1034C34.7934 13.6819 34.3388 14.0538 33.843 14.0538H23.8017C24.0909 17.0703 26.1983 18.7232 28.6777 18.7232C30.3719 18.7232 31.6529 18.0621 32.6859 17.1117C32.8512 16.9877 33.0165 16.8637 33.2645 16.8637C33.7603 16.8637 34.1736 17.277 34.1736 17.7315C34.1736 17.9794 34.0496 18.2274 33.843 18.3927C32.5207 19.6737 30.9504 20.5001 28.595 20.5001ZM32.6859 12.4836C32.4793 9.96291 31.0331 7.77283 28.2645 7.77283C25.8678 7.77283 24.0496 9.79762 23.7603 12.4836H32.6859Z"
+                fill="white"></path>
+              <path
+                d="M37.4794 1.53306C37.4794 0.954545 37.9339 0.5 38.5124 0.5C39.0909 0.5 39.5455 0.954545 39.5455 1.53306V9.09504C40.6612 7.44215 42.3141 5.99587 44.8347 5.99587C48.1405 5.99587 51.4463 8.6405 51.4463 13.186V13.2273C51.4463 17.7727 48.1818 20.4174 44.8347 20.4174C42.2728 20.4174 40.6199 19.0124 39.5455 17.4835V19.219C39.5455 19.7975 39.1323 20.2521 38.5124 20.2521C37.9339 20.2521 37.4794 19.7562 37.4794 19.219V1.53306ZM49.3389 13.3099V13.2686C49.3389 10.0041 47.1075 7.89669 44.4628 7.89669C41.9009 7.89669 39.4628 10.0868 39.4628 13.2273V13.2686C39.4628 16.4917 41.9009 18.6405 44.4628 18.6405C47.1488 18.6405 49.3389 16.657 49.3389 13.3099Z"
+                fill="white"></path>
+              <path
+                d="M57.7273 13.3098V13.2685C57.7273 9.3429 60.7851 6.03711 64.8347 6.03711C67.1488 6.03711 68.6777 6.90488 69.9174 8.0619C70.0826 8.18587 70.2479 8.47513 70.2479 8.76438C70.2479 9.3429 69.7934 9.75612 69.2562 9.75612C69.0083 9.75612 68.7603 9.63215 68.595 9.50818C67.6033 8.59909 66.4876 7.85529 64.8347 7.85529C62.0248 7.85529 59.8761 10.252 59.8761 13.2272V13.2685C59.8761 16.285 62.0661 18.6404 64.9587 18.6404C66.5289 18.6404 67.8099 17.8966 68.8017 16.9462C68.9256 16.8222 69.1322 16.6983 69.3802 16.6983C69.876 16.6983 70.3306 17.1528 70.3306 17.6487C70.3306 17.8966 70.2066 18.1445 70.0827 18.3098C68.7603 19.6322 67.1901 20.5412 64.876 20.5412C60.7851 20.4999 57.7273 17.1941 57.7273 13.3098Z"
+                fill="white"></path>
+              <path
+                d="M72.1075 13.3098V13.2685C72.1075 9.34289 75.1653 6.03711 79.3389 6.03711C83.4711 6.03711 86.529 9.30157 86.529 13.2272V13.2685C86.529 17.1941 83.4298 20.4999 79.2562 20.4999C75.124 20.4999 72.1075 17.2355 72.1075 13.3098ZM84.4215 13.3098V13.2685C84.4215 10.2933 82.1901 7.85529 79.2976 7.85529C76.281 7.85529 74.2149 10.2933 74.2149 13.2272V13.2685C74.2149 16.2437 76.405 18.6404 79.3389 18.6404C82.3141 18.6404 84.4215 16.2437 84.4215 13.3098Z"
+                fill="white"></path>
+              <path
+                d="M89.1735 7.23576C89.1735 6.65725 89.6281 6.20271 90.2066 6.20271C90.7851 6.20271 91.2396 6.65725 91.2396 7.23576V8.64072C92.1487 7.27709 93.3884 5.99609 95.7025 5.99609C97.9339 5.99609 99.3801 7.19444 100.165 8.76469C101.157 7.23576 102.645 5.99609 105.041 5.99609C108.223 5.99609 110.165 8.14485 110.165 11.5746V19.3019C110.165 19.8804 109.711 20.3349 109.132 20.3349C108.554 20.3349 108.099 19.8804 108.099 19.3019V12.1118C108.099 9.42585 106.777 7.93824 104.504 7.93824C102.397 7.93824 100.702 9.50849 100.702 12.2358V19.3845C100.702 19.963 100.248 20.4176 99.6694 20.4176C99.0909 20.4176 98.6363 19.963 98.6363 19.3845V12.0292C98.6363 9.42585 97.2727 7.89692 95.0826 7.89692C92.8925 7.89692 91.2396 9.7151 91.2396 12.2771V19.3432C91.2396 19.9217 90.8264 20.3763 90.2066 20.3763C89.6281 20.3763 89.1735 19.9217 89.1735 19.3432V7.23576Z"
+                fill="white"></path>
+              <path
+                d="M54.6281 20.3757C55.4725 20.3757 56.157 19.6912 56.157 18.8468C56.157 18.0024 55.4725 17.3179 54.6281 17.3179C53.7837 17.3179 53.0992 18.0024 53.0992 18.8468C53.0992 19.6912 53.7837 20.3757 54.6281 20.3757Z"
+                fill="white"></path>
+              <path
+                d="M111.694 7.56603C111.694 7.27678 111.777 7.02884 111.901 6.82223C112.025 6.61562 112.232 6.40901 112.479 6.24372C112.727 6.11975 112.975 6.03711 113.265 6.03711C113.554 6.03711 113.802 6.11975 114.008 6.24372C114.215 6.36769 114.422 6.5743 114.587 6.82223C114.711 7.07017 114.794 7.3181 114.794 7.60736C114.794 7.85529 114.711 8.14455 114.587 8.35116C114.463 8.55777 114.256 8.76438 114.05 8.92967C113.802 9.05364 113.554 9.13628 113.265 9.13628C112.975 9.13628 112.727 9.05364 112.479 8.92967C112.232 8.8057 112.066 8.59909 111.942 8.35116C111.777 8.0619 111.694 7.81397 111.694 7.56603ZM111.942 7.56603C111.942 7.81397 111.984 8.02058 112.108 8.22719C112.232 8.4338 112.397 8.59909 112.603 8.72306C112.81 8.84703 113.017 8.88835 113.265 8.88835C113.513 8.88835 113.719 8.84703 113.926 8.72306C114.132 8.59909 114.298 8.4338 114.422 8.22719C114.546 8.02058 114.587 7.81397 114.587 7.56603C114.587 7.3181 114.546 7.11149 114.422 6.90488C114.298 6.69827 114.132 6.53298 113.926 6.40901C113.719 6.28504 113.513 6.24372 113.265 6.24372C113.017 6.24372 112.81 6.28504 112.603 6.40901C112.397 6.53298 112.232 6.69827 112.108 6.90488C111.984 7.11149 111.942 7.3181 111.942 7.56603ZM113.843 7.19413C113.843 7.3181 113.802 7.40075 113.76 7.48339C113.719 7.56603 113.637 7.64868 113.513 7.64868L114.008 8.4338H113.678L113.265 7.73132H112.975V8.4338H112.686V6.61562H113.223C113.43 6.61562 113.595 6.65694 113.719 6.73959C113.843 6.82223 113.843 6.98752 113.843 7.19413ZM112.975 7.48339H113.182C113.306 7.48339 113.389 7.44207 113.43 7.40075C113.513 7.35942 113.513 7.27678 113.513 7.19413C113.513 7.11149 113.471 7.02884 113.43 6.98752C113.389 6.9462 113.265 6.90488 113.141 6.90488H112.934V7.48339H112.975Z"
+                fill="white"></path>
+            </svg>
+            Legal | Privacy Policy | Terms of Use | Cookie Settings | Dispute
+            Policy | DMCA Policy | Do Not Sell My Personal Information
+          </div>
+          <div class="copyright_discription">
+            <p>
+              © Copyright 2023 Web.com Group, Inc. All rights reserved. All
+              registered trademarks herein are the property of their
+              respective owners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const tap = document.querySelectorAll("#question_2");
+    const sap = document.querySelectorAll(".heading_of_facility ");
+    const show_peragraf = document.getElementsByClassName("qestion_answer");
+    const show_peragraf_1 =
+      document.getElementsByClassName("name_of_resource");
+    //   // const show_peragraf = [...document.getElementsByClassName("qestion_answer")];
+
+    //  for (let index = 0; index < tap.length; index++) {
+    //   tap[index].addEventListener("click",()=>{
+    //       if (index == 0) {
+    //         show_peragraf[0].classList.toggle("new_element_show")
+
+    //       }
+    //       else if (index == 1) {
+    //         show_peragraf[1].classList.toggle("new_element_show")
+
+    //       }
+    //       else if (index == 2) {
+    //         show_peragraf[2].classList.toggle("new_element_show")
+
+    //       }
+    //      else if (index == 3) {
+    //         show_peragraf[3].classList.toggle("new_element_show")
+
+    //       }
+    //      else if (index == 4) {
+    //         show_peragraf[4].classList.toggle("new_element_show")
+
+    //       }
+    //      else if (index == 5) {
+    //         show_peragraf[5].classList.toggle("new_element_show")
+
+    //       }
+    //      else if (index == 6) {
+    //         show_peragraf[6].classList.toggle("new_element_show")
+
+    //       }
+    //   })
+
+    //  }
+    const icons_i = document.querySelectorAll("#rotate_deg");
+    for (let index = 0; index < tap.length; index++) {
+      tap[index].addEventListener("click", () => {
+        show_peragraf[index].classList.toggle("new_element_show");
+        if (show_peragraf[index].classList.contains("new_element_show")) {
+          icons_i[index].style.transform = "rotate(180deg)";
+        } else {
+          icons_i[index].style.transform = "rotate(0deg)";
+        }
+      });
+    }
+
+    sap.forEach((easy, index_1) => {
+      easy.addEventListener("click", () => {
+        show_peragraf_1[index_1].classList.toggle("new_element_show_2");
+
+        // show_peragraf_1[index].classList.toggle("new_element_show");
+        if (
+          show_peragraf_1[index_1].classList.contains("new_element_show_2")
+        ) {
+          show_peragraf_1[index_1].style.display = "block";
+        } else {
+          show_peragraf_1[index_1].style.display = "none";
+        }
+        // console.log(icons_i[index])
+      });
+    });
+      //  function show_hiding_content(){
+      // show_peragraf[0].classList.toggle("new_element_show")
+      //   }
+      //  function show_hiding_content_1(){
+      // show_peragraf[1].classList.toggle("new_element_show")
+      //   }
+      //  function show_hiding_content_2(){
+      // show_peragraf[2].classList.toggle("new_element_show")
+      //   }
+      //  function show_hiding_content_3(){
+      // show_peragraf[3].classList.toggle("new_element_show")
+      //   }
+      //  function show_hiding_content_4(){
+      // show_peragraf[4].classList.toggle("new_element_show")
+      //   }
+      //  function show_hiding_content_5(){
+      // show_peragraf[5].classList.toggle("new_element_show")
+      //   }
+      //  function show_hiding_content_6(){
+      // show_peragraf[6].classList.toggle("new_element_show")
+      //   }
+  </script>
+</body>
+
+</html>
